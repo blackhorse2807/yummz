@@ -29,12 +29,12 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="py-12 bg-gradient-to-b from-yellow-50 to-white">
+    <div className="py-12 bg-gradient-to-b from-[#faf9f6] to-white">
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-yellow-600 sm:text-5xl">Contact YUMMZ FOODS</h1>
-          <p className="mt-4 text-xl text-amber-700 max-w-3xl mx-auto">
+          <h1 className="text-4xl font-bold text-[#1a2a44] sm:text-5xl">Contact YUMMZ FOODS</h1>
+          <p className="mt-4 text-xl text-[#1a2a44]/80 max-w-3xl mx-auto">
             We&apos;d love to hear from you. Get in touch with our team for inquiries, partnerships, or orders.
           </p>
         </div>
@@ -46,19 +46,19 @@ export default function ContactPage() {
           
           {/* Contact Information */}
           <div>
-            <h2 className="text-2xl font-semibold text-yellow-600 mb-6">Get In Touch</h2>
+            <h2 className="text-2xl font-semibold text-[#1a2a44] mb-6">Get In Touch</h2>
             
             <div className="space-y-8">
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-lg font-medium text-amber-600">Headquarters</h3>
-                  <p className="mt-1 text-amber-700">
+                  <h3 className="text-lg font-medium text-[#1a2a44]">Headquarters</h3>
+                  <p className="mt-1 text-[#1a2a44]/80">
                     YUMMZ FOODS PVT LTD<br />
                     Village & Post - Khamarshimulia<br />
                     PS - Taherpur, District - Nadia<br />
@@ -69,13 +69,13 @@ export default function ContactPage() {
               
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-lg font-medium text-amber-600">Phone</h3>
-                  <p className="mt-1 text-amber-700">
+                  <h3 className="text-lg font-medium text-[#1a2a44]">Phone</h3>
+                  <p className="mt-1 text-[#1a2a44]/80">
                     (+91) 9434056584<br />
                     (+91) 8170059607
                   </p>
@@ -84,13 +84,13 @@ export default function ContactPage() {
               
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-lg font-medium text-amber-600">Email</h3>
-                  <p className="mt-1 text-amber-700">
+                  <h3 className="text-lg font-medium text-[#1a2a44]">Email</h3>
+                  <p className="mt-1 text-[#1a2a44]/80">
                     yummzfoods@gmail.com
                   </p>
                 </div>
@@ -98,13 +98,13 @@ export default function ContactPage() {
               
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
                 <div className="ml-3">
-                  <h3 className="text-lg font-medium text-amber-600">Business Hours</h3>
-                  <p className="mt-1 text-amber-700">
+                  <h3 className="text-lg font-medium text-[#1a2a44]">Business Hours</h3>
+                  <p className="mt-1 text-[#1a2a44]/80">
                     Monday - Friday: 9:00 AM - 6:00 PM<br />
                     Saturday: 9:00 AM - 2:00 PM<br />
                     Sunday: Closed
@@ -114,17 +114,17 @@ export default function ContactPage() {
             </div>
             
             <div className="mt-12">
-              <h2 className="text-2xl font-semibold text-yellow-600 mb-6">Location Details</h2>
+              <h2 className="text-2xl font-semibold text-[#1a2a44] mb-6">Location Details</h2>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-lg font-medium text-amber-600">Transportation Access</h3>
-                    <p className="mt-1 text-amber-700">
+                    <h3 className="text-lg font-medium text-[#1a2a44]">Transportation Access</h3>
+                    <p className="mt-1 text-[#1a2a44]/80">
                       <span className="font-medium">Railway Stations:</span><br />
                       • BADKULLA (1.5 Km)<br />
                       • JALALKHALI (0.8 Km)<br />
@@ -136,13 +136,13 @@ export default function ContactPage() {
                 
                 <div className="flex items-start">
                   <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 text-yellow-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-6 w-6 text-[#1a2a44]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <h3 className="text-lg font-medium text-amber-600">Distances</h3>
-                    <p className="mt-1 text-amber-700">
+                    <h3 className="text-lg font-medium text-[#1a2a44]">Distances</h3>
+                    <p className="mt-1 text-[#1a2a44]/80">
                       • Approx. 85 km from Kolkata International Airport<br />
                       • On State Highway adjoining NH-34<br />
                       • 35 km from Bangladesh International Border<br />
@@ -155,8 +155,8 @@ export default function ContactPage() {
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white p-6 rounded-lg shadow-md border-2 border-yellow-300">
-            <h2 className="text-2xl font-semibold text-yellow-600 mb-6">Send Us a Message</h2>
+          <div className="bg-white p-6 rounded-lg shadow-md border-2 border-[#1a2a44]/10">
+            <h2 className="text-2xl font-semibold text-[#1a2a44] mb-6">Send Us a Message</h2>
             
             {submitted ? (
               <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
@@ -166,7 +166,7 @@ export default function ContactPage() {
             
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
-                <label htmlFor="name" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="name" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Your Name*
                 </label>
                 <input
@@ -175,13 +175,13 @@ export default function ContactPage() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
                   required
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="company" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="company" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Company/Organization
                 </label>
                 <input
@@ -190,12 +190,12 @@ export default function ContactPage() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="email" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="email" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Email Address*
                 </label>
                 <input
@@ -204,13 +204,13 @@ export default function ContactPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
                   required
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="phone" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="phone" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Phone Number
                 </label>
                 <input
@@ -219,12 +219,12 @@ export default function ContactPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
                 />
               </div>
               
               <div className="mb-4">
-                <label htmlFor="inquiry" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="inquiry" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Inquiry Type
                 </label>
                 <select
@@ -232,7 +232,7 @@ export default function ContactPage() {
                   name="inquiry"
                   value={formData.inquiry}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
                 >
                   <option value="general">General Inquiry</option>
                   <option value="sales">Sales & Orders</option>
@@ -243,7 +243,7 @@ export default function ContactPage() {
               </div>
               
               <div className="mb-6">
-                <label htmlFor="message" className="block text-amber-700 font-medium mb-2">
+                <label htmlFor="message" className="block text-[#1a2a44]/80 font-medium mb-2">
                   Your Message*
                 </label>
                 <textarea
@@ -251,7 +251,8 @@ export default function ContactPage() {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-2 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 h-32"
+                  className="w-full px-4 py-2 border border-[#1a2a44]/10 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1a2a44]"
+                  rows={4}
                   required
                 ></textarea>
               </div>
@@ -259,7 +260,7 @@ export default function ContactPage() {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 text-white py-2 px-4 rounded-md hover:from-amber-500 hover:to-yellow-500 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-all transform hover:scale-105 duration-300"
+                  className="w-full bg-[#1a2a44] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#0a2340] transition-colors"
                 >
                   Send Message
                 </button>
@@ -272,7 +273,7 @@ export default function ContactPage() {
       {/* Google Map */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="bg-white p-6 rounded-lg shadow-xl">
-          <h2 className="text-2xl font-semibold text-yellow-600 mb-6 text-center">Visit Our Location</h2>
+          <h2 className="text-2xl font-semibold text-[#1a2a44] mb-6 text-center">Visit Our Location</h2>
           <div className="w-full h-96 rounded-lg overflow-hidden">
             <iframe
               src="https://maps.google.com/maps?q=23.4341618,88.4894105&z=15&output=embed"
