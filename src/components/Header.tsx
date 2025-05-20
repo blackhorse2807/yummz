@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="bg-white text-[#1a2a44] sticky top-0 z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo and Title */}
           <div className="flex items-center">
@@ -28,20 +28,17 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-10">
-            <Link href="/" className="font-medium hover:text-[#0a2340] transition-colors">
-              Home
+            <Link href="/lee-chang" className="uppercase text-[15px] font-semibold hover:text-[#0a2340] transition-colors">
+              LEECHANG
             </Link>
-            <Link href="/about" className="font-medium hover:text-[#0a2340] transition-colors">
-              About Us
-            </Link>
-            <Link href="/tospe" className="font-medium hover:text-[#0a2340] transition-colors">
+            <Link href="/tospe" className="uppercase text-[15px] font-semibold hover:text-[#0a2340] transition-colors">
               TOSPE
             </Link>
-            <Link href="/lee-chang" className="font-medium hover:text-[#0a2340] transition-colors">
-              Lee Chang
+            <Link href="/about" className="uppercase text-[15px] font-semibold hover:text-[#0a2340] transition-colors">
+              COMPANY
             </Link>
-            <Link href="/contact" className="font-medium hover:text-[#0a2340] transition-colors">
-              Contact
+            <Link href="/contact" className="uppercase text-[15px] font-semibold hover:text-[#0a2340] transition-colors">
+              CONTACT US
             </Link>
           </nav>
 
@@ -72,39 +69,32 @@ const Header = () => {
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="pt-2 pb-4 space-y-1 px-4">
             <Link 
-              href="/" 
-              className="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 hover:text-[#0a2340]"
+              href="/lee-chang" 
+              className="block py-2 px-3 rounded-md uppercase text-[15px] font-semibold hover:bg-gray-100 hover:text-[#0a2340]"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Home
-            </Link>
-            <Link 
-              href="/about" 
-              className="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 hover:text-[#0a2340]"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About Us
+              LEECHANG
             </Link>
             <Link 
               href="/tospe" 
-              className="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 hover:text-[#0a2340]"
+              className="block py-2 px-3 rounded-md uppercase text-[15px] font-semibold hover:bg-gray-100 hover:text-[#0a2340]"
               onClick={() => setMobileMenuOpen(false)}
             >
               TOSPE
             </Link>
             <Link 
-              href="/lee-chang" 
-              className="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 hover:text-[#0a2340]"
+              href="/about" 
+              className="block py-2 px-3 rounded-md uppercase text-[15px] font-semibold hover:bg-gray-100 hover:text-[#0a2340]"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Lee Chang
+              COMPANY
             </Link>
             <Link 
               href="/contact" 
-              className="block py-2 px-3 rounded-md text-base font-medium hover:bg-gray-100 hover:text-[#0a2340]"
+              className="block py-2 px-3 rounded-md uppercase text-[15px] font-semibold hover:bg-gray-100 hover:text-[#0a2340]"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Contact
+              CONTACT US
             </Link>
           </div>
         </div>

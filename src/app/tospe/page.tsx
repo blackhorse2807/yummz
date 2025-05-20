@@ -208,10 +208,10 @@ export default function TOSPEPage() {
           Ready to elevate your culinary creations with TOSPE&apos;s premium spices? Explore our full range of products or contact us for wholesale inquiries.
         </p>
         <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <a href="/contact" className="inline-block px-8 py-3 bg-gradient-to-r from-yellow-500 to-amber-600 text-white rounded-lg font-medium shadow-md hover:shadow-lg transition-all transform hover:scale-105 duration-300">
+          <a href="/contact" className="inline-block bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] shadow hover:bg-gray-100 transition-colors">
             Contact for Orders
           </a>
-          <a href="#" className="inline-block px-8 py-3 bg-white border-2 border-amber-500 text-amber-600 rounded-lg font-medium shadow-md hover:shadow-lg hover:bg-amber-50 transition-all transform hover:scale-105 duration-300">
+          <a href="#" className="inline-block bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] border border-[#1a2a44] shadow hover:bg-gray-100 transition-colors">
             Download Catalog
           </a>
         </div>

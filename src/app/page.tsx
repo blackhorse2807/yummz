@@ -41,22 +41,22 @@ export default function Home() {
           <div className="absolute right-[-5%] bottom-[-20%] w-[70%] h-[70%] bg-[#11253d] rounded-full opacity-60"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-[1320px] mx-auto relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
             {/* Text Content */}
             <div className="flex flex-col justify-center px-8 py-24 md:py-0 md:pl-8 lg:pl-16">
-              <h1 className="text-white text-5xl md:text-7xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-white text-9xl md:text-7xl lg:text-6xl banner-heading font-bold leading-tight">
                 Pure Taste.<br />
                 Real Ingredients.
               </h1>
-              <p className="text-gray-300 mt-8 text-xl">
+              <p className="text-gray-300 mt-8 text-2xl">
                 Processing Industry with 2500 MT<br />
                 Multipurpose Cold Storage
               </p>
               <div className="mt-12">
                 <Link 
                   href="/tospe" 
-                  className="inline-block bg-white text-[#001434] font-bold py-4 px-10 rounded-md hover:bg-gray-100 transition-colors"
+                  className="inline-block bg-white text-[#001434] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] hover:bg-gray-100 transition-colors"
                 >
                   VIEW PRODUCTS
                 </Link>
@@ -95,7 +95,7 @@ export default function Home() {
 
       {/* Welcome Section */}
       <section className="bg-gradient-to-b from-white to-[#faf9f6] py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 items-center px-6">
+        <div className="max-w-[1320px] mx-auto grid md:grid-cols-3 gap-12 items-center px-6">
           {/* Logo */}
           <div className="mx-auto md:mx-0 bg-white p-6 rounded-3xl shadow-xl ring-1 ring-gray-100 w-fit">
             <Image src="/logo-demo.png" alt="Yummz Logo" width={240} height={90} className="object-contain" />
@@ -114,10 +114,10 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link href="#product-range" className="px-8 py-3 rounded-lg bg-[#1a2a44] text-white font-semibold shadow hover:bg-[#0a2340] transition-colors">
+              <Link href="#product-range" className="bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] shadow hover:bg-gray-100 transition-colors">
                 Explore Products
               </Link>
-              <Link href="/about" className="px-8 py-3 rounded-lg border-2 border-[#1a2a44] text-[#1a2a44] font-semibold hover:bg-[#1a2a44]/5 transition-colors">
+              <Link href="/about" className="bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px]  shadow hover:bg-gray-100 transition-colors">
                 About Us
               </Link>
             </div>
@@ -128,7 +128,7 @@ export default function Home() {
       {/* Why Choose Section */}
       <section className="bg-[#0a2340] py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-white text-center mb-10">Why Choose Yummz</h2>
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 px-4">
+        <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 px-4">
           {/* Natural Ingredients */}
           <div className="flex flex-col items-center text-center">
             <Image src="/emojis/organic.png" alt="Natural" width={64} height={64} className="mb-4" />
@@ -155,7 +155,7 @@ export default function Home() {
 
           {/* Stringent Quality Control */}
           <div className="flex flex-col items-center text-center">
-            <Image src="/emojis/qulaity%20check.png" alt="Quality Control" width={64} height={64} className="mb-4" />
+            <Image src="/emojis/qulaity-check.png" alt="Quality Control" width={64} height={64} className="mb-4" />
             <span className="text-white font-semibold text-sm">Stringent<br />Quality Control</span>
           </div>
 
@@ -182,43 +182,45 @@ export default function Home() {
       {/* Product Range Section */}
       <section id="product-range" className="bg-[#faf9f6] py-16">
         <h2 className="text-2xl md:text-3xl font-bold text-[#1a2a44] text-center mb-10">Our Product Range</h2>
-        <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
+        <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
-            <Image src="/infographics/green-chili-pickle.jpg" alt="Green Chili Pickel" width={100} height={120} className="object-contain mb-2" />
+            <Image src="/infographics/green-chili-pickle.jpg" alt="Green Chili Pickel" width={200} height={200} className="object-contain mb-2" />
             <span className="text-[#1a2a44] font-semibold text-sm text-center">Green Chili Pickel</span>
           </div>
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
-            <Image src="/infographics/synthetic-vinegar.jpg" alt="Synthetic Vineger" width={100} height={120} className="object-contain mb-2" />
+            <Image src="/infographics/synthetic-vinegar.jpg" alt="Synthetic Vineger" width={200} height={200} className="object-contain mb-2" />
             <span className="text-[#1a2a44] font-semibold text-sm text-center">Synthetic Vineger</span>
           </div>
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
-            <Image src="/infographics/sweet-corn-canned.jpg" alt="Sweet Corn" width={100} height={120} className="object-contain mb-2" />
+            <Image src="/infographics/sweet-corn-canned.jpg" alt="Sweet Corn" width={200} height={200} className="object-contain mb-2" />
             <span className="text-[#1a2a44] font-semibold text-sm text-center">Sweet Corn</span>
           </div>
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
-            <Image src="/infographics/green-chili-sauce.jpg" alt="Green Chili Sauce" width={100} height={120} className="object-contain mb-2" />
+            <Image src="/infographics/green-chili-sauce.jpg" alt="Green Chili Sauce" width={200} height={200} className="object-contain mb-2" />
             <span className="text-[#1a2a44] font-semibold text-sm text-center">Green Chili Sauce</span>
           </div>
         </div>
         <div className="flex justify-center mt-10">
-          <Link href="#" className="px-7 py-3 bg-[#1a2a44] text-white rounded-md font-semibold shadow hover:bg-[#223a5f] transition-colors">
+          <Link href="#" className="bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] shadow hover:bg-gray-100 transition-colors">
             VIEW PRODUCTS
           </Link>
         </div>
       </section>
 
       {/* Built on Excellence Section */}
-      <section className="relative bg-[#0a2340] bg-cover bg-center py-16" style={{backgroundImage: 'url(/landing-page/food-processing.jpg)'}}>
-        <div className="absolute inset-0 bg-[#0a2340]/90" />
-        <div className="relative max-w-4xl mx-auto px-4 text-center z-10">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Built on Excellence</h2>
-          <p className="text-white text-base md:text-lg font-medium mb-2">
-            At Yummz Foods, our infrastructure reflects our commitment to quality and efficiency.<br />
-            We operate modern, fully automated facilities with strict hygiene and safety protocols.<br />
-            Every product is processed and packed in a controlled environment to ensure purity.<br />
-            Our systems are designed for high-volume production without compromising standards.<br />
-            This foundation of excellence drives our promise of consistency and global trust.
-          </p>
+      <section className="relative bg-[#0a2340] bg-cover bg-center py-20" style={{backgroundImage: 'url(/img1yummz.avif)'}}>
+        <div className="absolute inset-0 bg-[#0a2340]/85" />
+        <div className="relative max-w-[1320px] mx-auto px-4 z-10 text-center">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">Built on Excellence</h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-white text-[15px] leading-7 tracking-normal text-center font-light italic">
+              At Yummz Foods, our infrastructure reflects our commitment to quality and efficiency.<br />
+              We operate modern, fully automated facilities with strict hygiene and safety protocols.<br />
+              Every product is processed and packed in a controlled environment to ensure purity.<br />
+              Our systems are designed for high-volume production without compromising standards.<br />
+              This foundation of excellence drives our promise of consistency and global trust.
+            </p>
+          </div>
         </div>
       </section>
     </main>

@@ -250,10 +250,10 @@ export default function LeeChangPage() {
             Discover the Lee-Chang difference with our premium Asian cuisine products. Perfect for home cooks and professional chefs alike.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-            <a href="/contact" className="inline-block px-8 py-3 bg-white text-[#1a2a44] rounded-lg font-medium shadow-md hover:shadow-lg transition-all transform hover:scale-105 duration-300">
+            <a href="/contact" className="inline-block bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] shadow hover:bg-gray-100 transition-colors">
               Order Now
             </a>
-            <a href="#" className="inline-block px-8 py-3 bg-transparent border-2 border-white text-white rounded-lg font-medium shadow-md hover:shadow-lg hover:bg-white/10 transition-all transform hover:scale-105 duration-300">
+            <a href="#" className="inline-block bg-white text-[#1a2a44] font-semibold py-[12px] px-[25px] text-[15px] rounded-[5px] shadow hover:bg-gray-100 transition-colors">
               View Recipes
             </a>
           </div>
