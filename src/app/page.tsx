@@ -2,30 +2,45 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Home() {
   // Array of product images to cycle through
   const productImages = [
     "/images/leechang1.jpg",
-    // "/images/leechang2.jpg",
-    // "/images/leechang4.jpg",
-    // "/images/leechang5.jpeg",
-    // "/images/leechang.png"
+    "/images/leechang2.jpg",
+    "/images/leechang4.jpg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Auto-cycle through images every 5 seconds with fade effect
+  // Function to handle slide transition
+  const slideToNext = () => {
+    if (isTransitioning) return;
+    
+    setIsTransitioning(true);
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % productImages.length);
+    
+    // Reset transitioning state after animation completes
+    setTimeout(() => {
+      setIsTransitioning(false);
+    }, 600);
+  };
+
+  // Auto-cycle through images every 3 seconds with slide effect
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % productImages.length);
-    }, 5000);
-    return () => clearInterval(interval);
+    // Start the automatic slideshow
+    timerRef.current = setInterval(slideToNext, 3000);
+    
+    // Cleanup function to clear the interval when component unmounts
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
   }, []);
-
-  // Current image
-  const currentImage = productImages[currentImageIndex];
 
   return (
     <main>
@@ -63,34 +78,39 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Single Product Image Carousel with Fade */}
+            {/* Image Slider with Sliding Effect - Auto Only */}
             <div className="relative flex items-center justify-center">
               <div className="absolute top-0 left-0 w-full h-full">
                 <div className="absolute bottom-0 right-0 w-[80%] h-[80%] bg-[#8091a9] rounded-full opacity-20 blur-3xl"></div>
               </div>
-              <div className="relative z-10 p-8 md:p-0 flex items-center justify-center">
+              <div className="relative z-10 p-8 md:p-0 flex items-center justify-center w-full">
                 <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-2xl">
-                  <img
-                    src={currentImage}
-                    alt="YUMMZ FOODS Product"
-                    className="w-full h-full object-contain transition-opacity duration-500"
-                  />
+                  <div className="slider-container w-full h-full relative">
+                    {productImages.map((image, index) => (
+                      <div
+                        key={index}
+                        className={`absolute top-0 left-0 w-full h-full transition-all duration-500 ease-in-out ${
+                          index === currentImageIndex 
+                            ? 'opacity-100 z-10 translate-x-0' 
+                            : index === (currentImageIndex + 1) % productImages.length || 
+                              (currentImageIndex === productImages.length - 1 && index === 0)
+                              ? 'opacity-0 z-0 translate-x-full' 
+                              : 'opacity-0 z-0 -translate-x-full'
+                        }`}
+                      >
+                        <img
+                          src={image}
+                          alt={`YUMMZ FOODS Product ${index + 1}`}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Image Carousel Navigation Dots
-        <div className="absolute bottom-8 left-0 right-0 flex justify-center space-x-2 z-20">
-          {productImages.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => handleDotClick(index)}
-              className={`w-3 h-3 rounded-full ${index === currentImageIndex ? 'bg-white' : 'bg-gray-400'}`}
-            />
-          ))}
-        </div> */}
       </section>
 
       {/* Welcome Section */}
@@ -185,7 +205,7 @@ export default function Home() {
         <div className="max-w-[1320px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
             <Image src="/infographics/green-chili-pickle.jpg" alt="Green Chili Pickel" width={200} height={200} className="object-contain mb-2" />
-            <span className="text-[#1a2a44] font-semibold text-sm text-center">Green Chili Pickel</span>
+            <span className="text-[#1a2a44] font-semibold text-sm text-center">Green Chilli Pickel</span>
           </div>
           <div className="flex flex-col items-center bg-white rounded-xl shadow p-4">
             <Image src="/infographics/synthetic-vinegar.jpg" alt="Synthetic Vineger" width={200} height={200} className="object-contain mb-2" />
