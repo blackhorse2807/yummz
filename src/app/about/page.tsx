@@ -37,7 +37,7 @@ export default function AboutPage() {
             >
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-1 bg-[#1a2a44]"></div>
               <h1 className="mt-8 text-5xl sm:text-6xl font-serif font-bold text-white tracking-tight">
-                About <span className="text-[#1a2a44]">YUMMZ</span>
+                About <span className="text-[#ffffff]">YUMMZ</span>
               </h1>
               <p className="mt-6 text-xl text-white max-w-2xl mx-auto font-light leading-relaxed">
                 A century of culinary excellence, blending tradition with innovation since 1920
