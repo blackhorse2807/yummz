@@ -25,7 +25,7 @@ export default function TOSPEPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1a2a44]/70 to-black/50 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60" />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div 
@@ -34,10 +34,13 @@ export default function TOSPEPage() {
             transition={{ duration: 1 }}
             className="text-center px-4 sm:px-6 lg:px-8"
           >
-            <h1 className="mt-8 text-5xl sm:text-6xl font-serif font-bold text-white tracking-tight">
-              <span className="text-[#1a2a44]">TOSPE</span>
+            <h1 className="text-7xl sm:text-8xl font-bold text-white drop-shadow-lg">
+              <span className="text-white relative">
+                TOSPE
+                <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-24 h-1.5 bg-white/90 rounded-full"></span>
+              </span>
             </h1>
-            <p className="mt-6 text-xl text-white max-w-2xl mx-auto font-light">
+            <p className="mt-8 text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-md">
               Premium quality traditional spices with authentic flavors
             </p>
           </motion.div>
@@ -48,7 +51,7 @@ export default function TOSPEPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
         <div className="bg-white rounded-xl shadow-2xl p-8 sm:p-12 border border-[#1a2a44]/10">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-serif text-[#1a2a44]">Authentic Flavors</h2>
+            <h2 className="text-2xl font-bold text-[#1a2a44]">Authentic Flavors</h2>
             <p className="mt-6 text-lg text-[#1a2a44]/80 leading-relaxed font-light text-justify">
               TOSPE brings you the finest collection of traditional Indian spices, carefully sourced and processed to preserve their authentic flavors and aromatic properties. Our spices are cultivated using sustainable farming practices and processed in our state-of-the-art facility to ensure maximum freshness and quality.
             </p>
@@ -65,7 +68,7 @@ export default function TOSPEPage() {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
       >
         <motion.div variants={fadeIn} className="text-center mb-16">
-          <h2 className="text-3xl font-serif font-bold text-[#1a2a44]">Our Spice Collection</h2>
+          <h2 className="text-3xl font-bold text-[#1a2a44]">Our Spice Collection</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-[#1a2a44] to-[#0a2340] mx-auto mt-4"></div>
           <p className="mt-6 text-[#1a2a44]/80 max-w-3xl mx-auto">
             Discover our premium selection of traditional and exotic spices
@@ -98,7 +101,7 @@ export default function TOSPEPage() {
           <motion.div variants={fadeIn} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
             <div className="relative h-64">
               <Image
-                src="/landing-page/dairy-machinery.jpg" 
+                src="/landing-page/food-processing.jpg" 
                 alt="TOSPE Garam Masala"
                 fill
                 className="object-cover"
@@ -143,7 +146,7 @@ export default function TOSPEPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-serif font-bold text-[#1a2a44] mb-6">Our Quality Commitment</h2>
+              <h2 className="text-3xl font-bold text-[#1a2a44] mb-6">Our Quality Commitment</h2>
               <div className="space-y-4 text-justify">
                 <p className="text-[#1a2a44]/80">
                   At TOSPE, we are committed to delivering the highest quality spices to your kitchen. Our integrated farming and processing approach ensures complete traceability from farm to table.
@@ -203,7 +206,7 @@ export default function TOSPEPage() {
 
       {/* Call to Action */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
-        <h2 className="text-3xl font-serif font-bold text-[#1a2a44] mb-6">Experience the TOSPE Difference</h2>
+        <h2 className="text-3xl font-bold text-[#1a2a44] mb-6">Experience the TOSPE Difference</h2>
         <p className="text-[#1a2a44]/80 max-w-3xl mx-auto mb-10">
           Ready to elevate your culinary creations with TOSPE&apos;s premium spices? Explore our full range of products or contact us for wholesale inquiries.
         </p>
@@ -219,7 +222,7 @@ export default function TOSPEPage() {
 
       {/* Gallery Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-serif font-bold text-[#1a2a44] text-center mb-8">Gallery</h2>
+        <h2 className="text-3xl font-bold text-[#1a2a44] text-center mb-8">Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Image src="/images/topse.png" alt="TOSPE Logo" width={400} height={300} className="rounded-lg" />
           <Image src="/images/img1yummz.avif" alt="Gallery Image 1" width={400} height={300} className="rounded-lg" />

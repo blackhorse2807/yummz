@@ -25,7 +25,7 @@ export default function LeeChangPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#1a2a44]/70 to-black/50 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/60" />
         </div>
         <div className="absolute inset-0 flex items-center justify-center">
           <motion.div 
@@ -34,10 +34,13 @@ export default function LeeChangPage() {
             transition={{ duration: 1 }}
             className="text-center px-4 sm:px-6 lg:px-8"
           >
-            <h1 className="mt-8 text-5xl sm:text-6xl font-serif font-bold text-white tracking-tight">
-              <span className="text-[#1a2a44]">Lee-Chang</span>
+            <h1 className="text-7xl sm:text-8xl font-bold text-white tracking-tight drop-shadow-lg">
+              <span className="text-white relative">
+                Lee-Chang
+                <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-32 h-1.5 bg-red-500/90 rounded-full"></span>
+              </span>
             </h1>
-            <p className="mt-6 text-xl text-white max-w-2xl mx-auto font-light">
+            <p className="mt-8 text-xl text-white/90 max-w-2xl mx-auto font-light leading-relaxed tracking-wide drop-shadow-md">
               Authentic Asian flavors for the modern kitchen
             </p>
           </motion.div>
@@ -48,7 +51,7 @@ export default function LeeChangPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 relative z-10">
         <div className="bg-white rounded-xl shadow-2xl p-8 sm:p-12 border border-[#1a2a44]/10">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="text-2xl font-serif text-[#1a2a44]">Taste of Asia</h2>
+            <h2 className="text-2xl font-bold text-[#1a2a44]">Taste of Asia</h2>
             <p className="mt-6 text-lg text-[#1a2a44]/80 leading-relaxed font-light text-justify">
               Lee-Chang brings you a carefully curated selection of authentic Asian cuisine products, from savory sauces to noodles and specialty ingredients. Our products are crafted using traditional recipes and premium ingredients to deliver the genuine flavors of Asia to your table.
             </p>
@@ -65,7 +68,7 @@ export default function LeeChangPage() {
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24"
       >
         <motion.div variants={fadeIn} className="text-center mb-16">
-          <h2 className="text-3xl font-serif font-bold text-[#1a2a44]">Our Product Range</h2>
+          <h2 className="text-3xl font-bold text-[#1a2a44]">Our Product Range</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-[#1a2a44] to-[#0a2340] mx-auto mt-4"></div>
           <p className="mt-6 text-[#1a2a44]/80 max-w-3xl mx-auto">
             Discover our selection of premium Asian cuisine products
@@ -142,7 +145,7 @@ export default function LeeChangPage() {
       <div className="bg-[#faf9f6] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-serif font-bold text-[#1a2a44]">Featured Category: Ready-to-Cook</h2>
+            <h2 className="text-3xl font-bold text-[#1a2a44]">Featured Category: Ready-to-Cook</h2>
             <div className="h-1 w-24 bg-gradient-to-r from-[#1a2a44] to-[#0a2340] mx-auto mt-4"></div>
             <p className="mt-6 text-[#1a2a44]/80 max-w-3xl mx-auto">
               Our premium ready-to-cook meal kits bring authentic Asian dishes to your kitchen in minutes
@@ -151,7 +154,7 @@ export default function LeeChangPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h3 className="text-2xl font-serif font-bold text-[#1a2a44] mb-6">Restaurant Quality, Home Convenience</h3>
+              <h3 className="text-2xl font-bold text-[#1a2a44] mb-6">Restaurant Quality, Home Convenience</h3>
               <div className="space-y-4 text-justify">
                 <p className="text-[#1a2a44]/80">
                   Lee-Chang&apos;s ready-to-cook meal kits bring restaurant-quality Asian cuisine to your home kitchen with minimal preparation and maximum flavor. Each kit contains pre-measured, premium ingredients and our signature sauces.
@@ -245,7 +248,7 @@ export default function LeeChangPage() {
       {/* Call to Action */}
       <div className="bg-gradient-to-r from-[#1a2a44] to-[#0a2340] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-serif font-bold text-white mb-6">Bring Home the Authentic Taste of Asia</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Bring Home the Authentic Taste of Asia</h2>
           <p className="text-white max-w-3xl mx-auto mb-10 opacity-90">
             Discover the Lee-Chang difference with our premium Asian cuisine products. Perfect for home cooks and professional chefs alike.
           </p>
@@ -262,7 +265,7 @@ export default function LeeChangPage() {
 
       {/* Gallery Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <h2 className="text-3xl font-serif font-bold text-[#1a2a44] text-center mb-8">Gallery</h2>
+        <h2 className="text-3xl font-bold text-[#1a2a44] text-center mb-8">Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Image src="/images/leechang1.jpg" alt="Lee-Chang 1" width={400} height={300} className="rounded-lg" />
           <Image src="/images/leechang2.jpg" alt="Lee-Chang 2" width={400} height={300} className="rounded-lg" />
